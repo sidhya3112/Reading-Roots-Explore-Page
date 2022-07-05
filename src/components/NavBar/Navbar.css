@@ -1,0 +1,194 @@
+.navbar{
+    background-color: whitesmoke;
+    box-shadow: 0px 3px 5px rgb(0 0 0 / 20%);
+    height: calc(60*var(--screen));
+}
+
+.navbar-container{
+    max-width: calc(1140*var(--screen));
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 236px;
+    justify-content: space-between;
+}
+
+.logo-img{
+    height: 50px;
+    width: 50px;
+}
+
+.logo-text{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    align-items: baseline;
+    gap: 3px;
+}
+
+.logo-main-text{
+    color: #a2671a;
+}
+
+.company-name{
+    font-size: 24px;
+    font-family: -webkit-body;
+    height: 26px
+}
+
+.company-tagline{
+    font-size: 14px;
+    font-family: unset;
+    height: 16px;
+}
+
+.beta-version{
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    height: 18px;
+}
+
+
+/* Navbar Components */
+.navbar-component-list{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 750px;
+}
+
+.navbar-components{
+    text-decoration: none;
+    color: #413e66;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navbar-icons{
+    width: 30px;
+    height: 30px;
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-profile-icon{
+    text-decoration: none;
+    color: #413e66;
+    font-size: 15px;
+    display: flex;
+    align-items: flex-end;
+    gap: 9px;
+    font-weight: 600;
+}
+
+.down-arrow{
+    width: 15px;
+}
+
+
+
+
+/* Popup Menus */
+.popup-menus{
+    display: flex;
+    justify-content: center;
+}
+
+.pop-up{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    position: absolute;
+    top: 60px;
+    background-color: whitesmoke;
+    box-shadow: 0px 1px 3px #a2671a;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+
+/* Notification Menu */
+
+.menu-heading{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(162, 103, 26);
+    height: 24px;
+    padding-bottom: 12px;
+}
+
+.notification-list-items{
+    font-size: 17px;
+}
+
+.notification-list-items:after {
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: #a2671a;
+    border-radius: 100px;
+}
+
+
+/* Profile Menu */
+
+.profile{
+    padding: 0px;
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profile-list-items{
+    font-size: 17px;
+    text-align: center;
+}
+
+.edit-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-photo{
+    width: 60px;
+    height: 60px;
+    border: 1.8px solid #413e66;
+    border-radius: 60px;
+}
+
+.line-break{
+    content: "";
+    display: block;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: #a2671a;
+    border-radius: 100px;
+}
+
