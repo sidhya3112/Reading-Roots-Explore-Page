@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/NavBar/Navbar';
+import PageContent from './components/PageContent/PageContent';
 
 function App() {
   return (
@@ -7,6 +8,8 @@ function App() {
       <Navbar
       userName= 'sidhya.jain'
       />
+      
+      <PageContent/>
     </>
   );
 }
