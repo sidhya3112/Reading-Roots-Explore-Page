@@ -6,6 +6,7 @@ import Books from '../Books/Books';
 
 const PageContent = () => {
 
+
     const genre = [
         { label: 'All', value: 'All' },
         { label: 'Fiction', value: 'Fiction' },
@@ -36,6 +37,7 @@ const PageContent = () => {
         { label: 'Most Liked', value: 'Most Liked' },
     ]
 
+
   return (
     <div className='page-container'>
         <ul className='search-genre-bar'>
@@ -62,37 +64,40 @@ const PageContent = () => {
         </div>
 
         <ul className='filter-list'>
-
-            <div className='dropdown-menu year'>
+            <ul className="small-screen-filterlist-1">
+               <div className='dropdown-menu year'>
                 Year
-                <Select
-                className='dropdown-field year-field'
-                options={year}
-                defaultValue={{ label: 'All', value: 'All' }}
-                />
-            </div>
+                   <Select
+                    className='dropdown-field year-field'
+                    options={year}
+                    defaultValue={{ label: 'All', value: 'All' }}
+                    />
+                </div>
 
-            <div className='dropdown-menu branch'>
+                <div className='dropdown-menu branch'>
                 Branch
+                   <Select
+                    className='dropdown-field branch-field'
+                    options={branch}
+                    defaultValue={{ label: 'All', value: 'All' }}
+                    />
+                </div>
+            </ul>
+
+            <ul className="small-screen-filterlist-2">
+                <div className='available-only'>
+                    <input className='checkbox' type="checkbox" />
+                    Available Only
+                </div>
+
+                <button className='filter-btn'>Filter</button>
+
                 <Select
-                className='dropdown-field branch-field'
-                options={branch}
-                defaultValue={{ label: 'All', value: 'All' }}
-                />
-            </div>
-
-            <div className='available-only'>
-                <input className='checkbox' type="checkbox" />
-                Available Only
-            </div>
-
-            <button className='filter-btn'>Filter</button>
-
-            <Select
                 className='dropdown-field sort-field'
                 options={sort}
                 placeholder='Sort'
-            />
+                />
+            </ul>
         </ul>
 
         <Books

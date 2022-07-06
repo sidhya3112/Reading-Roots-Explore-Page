@@ -1,23 +1,23 @@
 .book-card{
-    height: 510px;
+    height: calc(510*var(--screen));
     width: 100%;
     box-shadow: 5px 13px 14px darkgrey;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: calc(10*var(--screen));
+    border-bottom-right-radius: calc(10*var(--screen));
 }
 
 .card-img{
-    height: 400px;
+    height: calc(400*var(--screen));
     width: 100%;
 }
 
 .card-body{
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    font-size: 16px;
-    padding-left: 12px;
-    padding-right: 12px;
+    gap: calc(8*var(--screen));
+    font-size: calc(16*var(--screen));
+    padding-left: calc(12*var(--screen));
+    padding-right: calc(12*var(--screen));
 }
 
 .card-title{
@@ -65,16 +65,50 @@
     background: transparent;
     border: none;
     border: 1px solid #a2671a;
-    border-radius: 5px;
-    width: 130px;
-    height: 35px;
+    border-radius: calc(5*var(--screen));
+    width: calc(130*var(--screen));
+    height: calc(35*var(--screen));
     color: #a2671a;
-    font-size: 17px;
+    font-size: calc(17*var(--screen));
 }
 
 .right-arrow{
     background: #a2671a;
-    width: 15px;
-    padding: 5px;
-    border-radius: 15px;
+    width: calc(15*var(--screen));
+    padding: calc(5*var(--screen));
+    border-radius: calc(15*var(--screen));
 }
+
+@media screen and (max-width: 600px) {
+    .book-card{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .book-card{
+        width: 150px;
+        height: 250px;
+    }
+
+    .card-img{
+        height: 185px;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    .book-card{
+        width: 115px;
+        height: 200px;
+    }
+
+    .card-img{
+        height: 136px;
+        width: 100%;
+    }
+    
+}
+
+

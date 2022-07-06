@@ -1,14 +1,13 @@
 .books-section{
-    margin-top: 50px;
-    align-self: flex-start;
+    margin-top: calc(50*var(--screen));
 }
 
 .no-of-books{
     display: flex;
     align-items: center;
-    gap: 7px;
-    font-size: 18px;
-    padding-bottom: 40px;
+    gap: calc(7*var(--screen));
+    font-size: calc(18*var(--screen));
+    padding-bottom: calc(40*var(--screen));
 }
 
 .quantity{
@@ -20,9 +19,85 @@
 
 
 .dot{
-    margin-top: 50px;
+    margin-top: calc(50*var(--screen));
     background-color: #a2671a;
-    height: 12px;
-    width: 12px;
-    border-radius: 12px;
+    height: calc(12*var(--screen));
+    width: calc(12*var(--screen));
+    border-radius: calc(12*var(--screen));
+}
+
+
+/* Carousel settings for smaller screen */
+
+@media screen and (max-width: 1024px) {
+    /* Carousel - width of element displayed on screen */
+    .bqyzQp {
+        position: relative;
+        width: 484px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .bqyzQp {
+        position: relative;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bqyzQp {
+        position: relative;
+        width: 350px;
+    }
+
+    /* carousel - card width */
+    .bVoXXg{
+        display: flex;
+        justify-content: flex-start;
+        width: 200px;
+    }
+
+    
+    .books-section{
+        align-self: center;
+    }
+
+    .no-of-books{
+        justify-content: center;
+    }
+
+    /* width of entire carousel containing all the cards */
+    .dvnBqm{
+        width: 235px;
+    }
+}
+
+
+@media screen and (max-width: 475px) {
+    .bqyzQp {
+        width: 250px;
+    }
+
+    .bVoXXg{
+        width: 200px;
+    }
+    
+    .dvnBqm{
+        width: 170px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .bqyzQp {
+        width: 183px;
+    }
+
+    .bVoXXg {
+        width: 160px;
+    }
+
+    .dvnBqm {
+        width: 130px;
+    }
+    
 }

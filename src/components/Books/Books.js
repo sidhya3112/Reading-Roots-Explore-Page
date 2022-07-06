@@ -14,32 +14,33 @@ const Books = (props) => {
     const responsive = [
         {
             breakpoint: 5000,
-            cols: 5,
-            rows: 1,
-            gap: 20,
-            loop: true,
-        },
-        {
-            breakpoint: 2000,
             cols: 4,
             rows: 1,
             gap: 20,
             loop: true,
         },
         {
-            breakpoint: 1000,
+            breakpoint: 2560,
             cols: 3,
             rows: 1,
-            gap: 10,
+            gap: 20,
             loop: true,
         },
         {
-            breakpoint: 800,
+            breakpoint: 1024,
             cols: 2,
             rows: 1,
             gap: 10,
             loop: true,
         },
+        {
+          breakpoint: 600,
+          cols: 1,
+          rows: 1,
+          gap: 10,
+          loop: true,
+        },
+        
     
     ]
 
@@ -64,6 +65,7 @@ const Books = (props) => {
         dot={MyDot}
         showDots={true}
         responsiveLayout={responsive}
+        mobileBreakpoint={600}
         >
             <Carousel.Item>
               <BookCard

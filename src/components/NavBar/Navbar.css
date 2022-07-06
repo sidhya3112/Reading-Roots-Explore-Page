@@ -126,6 +126,7 @@
     padding: calc(10*var(--screen));
     width: calc(200*var(--screen));
     border-radius: calc(10*var(--screen));
+    z-index: 1;
 }
 
 
@@ -195,3 +196,89 @@
     border-radius: 100px;
 }
 
+
+
+/* Small Screen Nav-Menu */
+
+@media screen and (max-width:1000px) {
+    .navbar-component-list{
+      display: none;
+    }
+}
+
+
+.small-screen-nav-menu{
+    padding: 0px;
+    background: transparent;
+    border: none;
+    border: 2px solid #413e66;
+    border-radius: calc(10*var(--smscreen));
+    cursor: pointer;
+    position: absolute;
+    top: calc(5.5*var(--smscreen));
+    right: calc(40*var(--smscreen));
+    height: calc(35*var(--smscreen));
+    width: calc(35*var(--smscreen));
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbtn-inside-menu{
+    background: none;
+    border: none;
+    align-self: center;
+    margin: calc(12*var(--smscreen));
+    background: #413e66;
+    border-radius: calc(10*var(--smscreen));
+    display: flex;
+    align-items: center;
+    height: calc(35*var(--smscreen));
+    width: calc(35*var(--smscreen));
+}
+
+.menu-img{
+    width: calc(20*var(--smscreen));
+    height: calc(20*var(--smscreen));
+}
+
+.menuNav {
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    background: whitesmoke;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    max-width: calc(250*var(--smscreen));
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(7*var(--smscreen));
+  }
+  
+  .menuNav.showMenu {
+    width: 100%;
+    box-shadow: 0px 3px 5px rgb(0 0 0 / 20%);
+  }
+  
+  .components-inside-menu {
+    text-transform: uppercase;
+    padding: calc(10*var(--smscreen)) calc(40*var(--smscreen));
+    font-size: calc(13*var(--smscreen));
+  }
+
+  .components-inside-menu:hover{
+    border-bottom: 1px solid #413e66;
+  }
+
+
+  @media screen and (max-width:350px){
+    .navbar-container{
+        padding-left: 20px;
+    }
+  }

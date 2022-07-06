@@ -14,8 +14,107 @@ code {
 }
 
 
-@media screen and (min-width:1440px) {
+@media screen and (max-width:3000px) {
+  :root{
+    --screen: 2.08px
+  }
+  .navbar-small-screen{
+      display: none;
+  }
+
+  
+}
+
+@media screen and (max-width:2760px) {
+  :root{
+    --screen: 1.916px
+  }
+}
+
+@media screen and (max-width:2560px) {
+  :root{
+    --screen: 1.78px
+  }
+}
+
+@media screen and (max-width:2200px) {
+  :root{
+    --screen: 1.53px
+  }
+}
+
+@media screen and (max-width:2000px) {
+  :root{
+    --screen: 1.38px
+  }
+}
+
+@media screen and (max-width:1800px) {
+  :root{
+    --screen: 1.25px
+  }
+}
+
+@media screen and (max-width:1620px) {
+  :root{
+    --screen: 1.125px
+  }
+}
+
+/* screen = big screens w.r.t 1440px */
+
+@media screen and (max-width:1440px) {
   :root{
     --screen: 1px
   }
 }
+
+@media screen and (max-width:1300px) {
+  :root{
+    --screen: 0.903px
+  }
+}
+
+@media screen and (max-width:1150px) {
+  :root{
+    --screen: 0.79px
+  }
+}
+
+@media screen and (max-width:1070px) {
+  :root{
+    --screen: 0.74px
+  }
+}
+
+/* smscreen = small screen w.r.t 1000px */
+
+@media screen and (max-width:1000px) {
+  :root{
+    --smscreen: 1px;
+    --screen: 0.69px
+  }
+  .navbar-small-screen{
+    display: block;
+  }
+
+}
+
+@media screen and (max-width:900px) {
+  :root{
+    --smscreen: 0.9px;
+    --screen: 0.625px
+  }
+}
+
+@media screen and (max-width:810px) {
+  :root{
+    --smscreen: 0.81px;
+    --screen: 0.5625px
+  }
+}
+
+
+
+
+
