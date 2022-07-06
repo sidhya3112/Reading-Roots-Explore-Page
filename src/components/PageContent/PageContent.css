@@ -1,12 +1,13 @@
 .page-container{
     background: whitesmoke;
     padding-top: 90px;
-    padding-right: 150px;
-    padding-left: 150px;
+    margin-right: 150px;
+    margin-left: 150px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .search-genre-bar{

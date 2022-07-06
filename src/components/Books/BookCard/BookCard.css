@@ -1,0 +1,80 @@
+.book-card{
+    height: 510px;
+    width: 100%;
+    box-shadow: 5px 13px 14px darkgrey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-img{
+    height: 400px;
+    width: 100%;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.card-title{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    font-weight: bold;
+
+}
+
+.title{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.author{
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+
+.card-owner{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.owner-name{
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+}
+
+.request-book{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.request-book-btn{
+    margin: 0px;
+    padding: 0px;
+    background: transparent;
+    border: none;
+    border: 1px solid #a2671a;
+    border-radius: 5px;
+    width: 130px;
+    height: 35px;
+    color: #a2671a;
+    font-size: 17px;
+}
+
+.right-arrow{
+    background: #a2671a;
+    width: 15px;
+    padding: 5px;
+    border-radius: 15px;
+}

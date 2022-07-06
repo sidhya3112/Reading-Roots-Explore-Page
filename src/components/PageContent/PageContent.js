@@ -95,7 +95,9 @@ const PageContent = () => {
             />
         </ul>
 
-        <Books/>
+        <Books
+        noOfBooks='5'
+        />
     </div>
   )
 }

@@ -1,0 +1,28 @@
+.books-section{
+    margin-top: 50px;
+    align-self: flex-start;
+}
+
+.no-of-books{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.quantity{
+    margin: 0px;
+    padding: 0px;
+    color: #a2671a;
+    font-weight: bold;
+}
+
+
+.dot{
+    margin-top: 50px;
+    background-color: #a2671a;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+}
