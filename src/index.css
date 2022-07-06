@@ -14,12 +14,28 @@ code {
 }
 
 
+@media screen and (min-width:4000px) {
+  :root{
+    --screen: 3.125px
+  }
+  .navbar-small-screen{
+    display: none;
+ }
+}
+
+@media screen and (max-width:4000px) {
+  :root{
+    --screen: 2.78px
+  }
+  .navbar-small-screen{
+    display: none;
+}
+}
+
+
 @media screen and (max-width:3000px) {
   :root{
     --screen: 2.08px
-  }
-  .navbar-small-screen{
-      display: none;
   }
 
   

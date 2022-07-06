@@ -12,6 +12,13 @@ import BookCard from './BookCard/BookCard';
 const Books = (props) => {
 
     const responsive = [
+      {
+        breakpoint: 6000,
+        cols: 5,
+        rows: 1,
+        gap: 20,
+        loop: true,
+    },
         {
             breakpoint: 5000,
             cols: 4,
@@ -53,6 +60,7 @@ const Books = (props) => {
         >
         </div>
       )
+
 
   return (
     <div className='books-section'>
