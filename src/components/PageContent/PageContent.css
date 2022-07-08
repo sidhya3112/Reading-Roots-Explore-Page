@@ -55,6 +55,10 @@
     font-family: unset;
 }
 
+.search-input-field:hover{
+    border: 1.8px solid black;
+}
+
 
 /* DropDown Menus */
 .dropdown-menu{
@@ -84,6 +88,10 @@
     font-family: unset;
     color: grey;
     cursor: pointer;
+}
+
+.dropdown-field:hover{
+    border: 1.8px solid black;
 }
 
 
