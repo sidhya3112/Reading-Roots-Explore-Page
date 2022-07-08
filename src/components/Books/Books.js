@@ -7,48 +7,26 @@ import book2 from '../../images/book2.jpg'
 import book3 from '../../images/book3.jpg'
 import book4 from '../../images/book4.jpg'
 import book5 from '../../images/book5.jpg'
+import arrow from '../../images/right-chevron.png'
 import BookCard from './BookCard/BookCard';
 
 const Books = (props) => {
 
     const responsive = [
-      {
-        breakpoint: 6000,
-        cols: 5,
-        rows: 1,
-        gap: 20,
-        loop: true,
-    },
         {
-            breakpoint: 5000,
+            breakpoint: 2000,
             cols: 4,
             rows: 1,
-            gap: 20,
+            gap: 25,
             loop: true,
         },
         {
-            breakpoint: 2560,
+            breakpoint: 1024,
             cols: 3,
             rows: 1,
             gap: 20,
             loop: true,
         },
-        {
-            breakpoint: 1024,
-            cols: 2,
-            rows: 1,
-            gap: 10,
-            loop: true,
-        },
-        {
-          breakpoint: 600,
-          cols: 1,
-          rows: 1,
-          gap: 10,
-          loop: true,
-        },
-        
-    
     ]
 
     const MyDot = ({ isActive}) => (
@@ -56,9 +34,7 @@ const Books = (props) => {
         style={{
             background: isActive? '#a2671a' : '#fff',
             border: '1.8px solid #a2671a'
-        }}
-        >
-        </div>
+        }}></div>
       )
 
 
@@ -70,10 +46,16 @@ const Books = (props) => {
         </div>
         
         <Carousel 
+        cols={5}
+        rows={1}
+        gap={30}
+        loop={true}
         dot={MyDot}
         showDots={true}
         responsiveLayout={responsive}
-        mobileBreakpoint={600}
+        mobileBreakpoint={700}
+        arrowLeft={<img src={arrow} alt="" className='carousel-left-arrow carousel-arrow'/>}
+        arrowRight={<img src={arrow} alt="" className='carousel-right-arrow carousel-arrow'/>}
         >
             <Carousel.Item>
               <BookCard
@@ -87,7 +69,7 @@ const Books = (props) => {
               <BookCard
               img={book2}
               title='The Kite Runner'
-              author='Khaled'
+              author='Khaled Hosseini'
               owner='jay'
               />
             </Carousel.Item>
@@ -95,7 +77,7 @@ const Books = (props) => {
               <BookCard
               img={book3}
               title='Wish I Could Tell You'
-              author='Durjoy'
+              author='Durjoy Datta'
               owner='jay'
               />
             </Carousel.Item>
@@ -103,7 +85,7 @@ const Books = (props) => {
               <BookCard
               img={book4}
               title='Think Like A Monk'
-              author='Jay'
+              author='Jay Shetty'
               owner='jay'
               />
             </Carousel.Item>

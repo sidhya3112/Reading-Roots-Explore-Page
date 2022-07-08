@@ -9,19 +9,21 @@ const BookCard = (props) => {
         <div className="card-body">
             <div className="card-title">
                 <p className='title'>{props.title} </p>
-                &nbsp; by
-                <p className="author"> &nbsp; {props.author}</p>
+                <div className='by'>
+                   by &nbsp;
+                   <p className="author">{props.author}</p>
+                </div>
             </div>
             <div className="card-owner">
                 Owner:
                 <p className="owner-name">&nbsp; {props.owner}</p>
             </div>
-            <div className="request-book">
-                <button className='request-book-btn'>
-                    Request Book
-                </button>
+        </div>
+        <div className="request-book">
+            <button className='request-book-btn'>
+                Request Book
+            </button>
                 <img className='right-arrow' src={arrow} alt="" />
-            </div>
         </div>
     </div>
   )

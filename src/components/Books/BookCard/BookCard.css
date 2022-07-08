@@ -1,49 +1,58 @@
+/* Carousel Card Media Queries */
+
+/* Media Queries w.r.t 3000px */
 .book-card{
-    height: calc(510*var(--screen));
     width: 100%;
     box-shadow: 5px 13px 14px darkgrey;
-    border-bottom-left-radius: calc(10*var(--screen));
-    border-bottom-right-radius: calc(10*var(--screen));
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-img{
-    height: calc(400*var(--screen));
     width: 100%;
+    height: 450px;
 }
 
 .card-body{
     display: flex;
     flex-direction: column;
-    gap: calc(8*var(--screen));
-    font-size: calc(16*var(--screen));
-    padding-left: calc(12*var(--screen));
-    padding-right: calc(12*var(--screen));
+    font-size: 29px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 5px;
 }
 
 .card-title{
     padding: 0px;
     margin: 0px;
     display: flex;
-    font-weight: bold;
-
+    flex-direction: column;
 }
 
 .title{
     margin: 0px;
     padding: 0px;
     text-decoration: underline;
-    font-weight: normal;
+    font-size: 31px;
+}
+
+.by{
+    display: flex;
+    font-weight: bold;
+    align-items: flex-start;
 }
 
 .author{
     margin: 0px;
-    padding: 0px;
     font-weight: normal;
 }
 
 .card-owner{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     font-weight: bold;
 }
 
@@ -57,58 +66,257 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .request-book-btn{
     margin: 0px;
     padding: 0px;
     background: transparent;
-    border: none;
-    border: 1px solid #a2671a;
-    border-radius: calc(5*var(--screen));
-    width: calc(130*var(--screen));
-    height: calc(35*var(--screen));
+    border: 2px solid #a2671a;
+    border-radius: 11px;
+    width: 176px;
+    height: 49px;
     color: #a2671a;
-    font-size: calc(17*var(--screen));
+    font-size: 24px;
+}
+
+.book-card:hover{
+    transform: scale(1.05);
+}
+
+.book-card:hover .request-book-btn{
+    background: #a2671a;
+    color: white;
 }
 
 .right-arrow{
     background: #a2671a;
-    width: calc(15*var(--screen));
-    padding: calc(5*var(--screen));
-    border-radius: calc(15*var(--screen));
+    width: 21px;
+    padding: 10px;
+    border-radius: 100px;
 }
 
-@media screen and (max-width: 600px) {
-    .book-card{
-        width: 200px;
-    }
-}
 
-@media screen and (max-width: 475px) {
-    .book-card{
-        width: 150px;
-        height: 250px;
-    }
 
+@media screen and (max-width: 2500px){
     .card-img{
-        height: 185px;
-        width: 100%;
+        height: 360px;
     }
     
+    .title{
+        font-size: 27px;
+    }
+
+    .card-body{
+        font-size: 25px;
+    }
+
+    .request-book-btn {
+        width: 156px;
+        height: 43px;
+        font-size: 20px;
+    }
+
+    .right-arrow{
+        width: 16px;
+        padding: 9px;
+    }
 }
 
-@media screen and (max-width: 350px) {
-    .book-card{
-        width: 115px;
+
+
+@media screen and (max-width: 2000px){
+    
+    .title{
+        font-size: 23px;
+    }
+
+    .card-body{
+        font-size: 21px;
+    }
+
+    .request-book-btn {
+        width: 132px;
+        height: 37px;
+        font-size: 17px;
+    }
+
+    .right-arrow{
+        width: 12px;
+        padding: 9px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1800px){
+    .card-img{
+        height: 320px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .card-body{
+        font-size: 18px;
+    }
+
+    .request-book-btn {
+        width: 132px;
+        height: 37px;
+        font-size: 17px;
+    }
+
+    .right-arrow{
+        width: 12px;
+        padding: 9px;
+    }
+}
+
+
+
+@media screen and (max-width: 1650px){
+    .card-img{
+        height: 280px;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .card-body{
+        font-size: 16px;
+    }
+
+    .request-book-btn {
+        width: 107px;
+        height: 33px;
+        font-size: 14px;
+        border: 1px solid #a2671a;
+        border-radius: 7px;
+    }
+
+    .right-arrow{
+        width: 11px;
+        padding: 7px;
+    }
+}
+
+
+
+@media screen and (max-width: 1500px){
+    .card-img{
+        height: 235px;
+    }
+
+    .title{
+        font-size: 16px;
+    }
+
+    .card-body{
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .request-book {
+        padding: 13px;
+    }
+
+    .request-book-btn {
+        width: 85px;
+        height: 26px;
+        font-size: 11px;
+        border: 1px solid #a2671a;
+        border-radius: 3px;
+    }
+
+    .right-arrow{
+        width: 7px;
+        padding: 5px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1440px){
+    .card-img{
         height: 200px;
     }
 
-    .card-img{
-        height: 136px;
-        width: 100%;
+    .title{
+        font-size: 14px;
+    }
+
+    .card-body{
+        font-size: 12px;
+    }
+
+    .request-book-btn {
+        width: 64px;
+        height: 20px;
+        font-size: 8px;
+        border: 1px solid #a2671a;
+        border-radius: 3px;
+    }
+
+    .right-arrow{
+        width: 6px;
+        padding: 4px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .book-card{
+        box-shadow: 3px 2px 8px darkgrey;
     }
     
+    .card-img{
+        height: 175px;
+    }
+
+    .title{
+        font-size: 12px;
+    }
+
+    .card-body{
+        font-size: 10px;
+        gap: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .request-book {
+        padding: 10px;
+    }
+
+    .request-book-btn {
+        width: 48px;
+        height: 17px;
+        font-size: 6px;
+        border: 1px solid #a2671a;
+        border-radius: 3px;
+    }
+
+    .right-arrow{
+        width: 5px;
+        padding: 3px;
+    }
 }
+
+
+
+
+
+
+
+
+
 
 
