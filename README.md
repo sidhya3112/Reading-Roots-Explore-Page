@@ -1,6 +1,6 @@
 # Explore-Page
 
-*This UI design is purely made with ReactJS. It is fully responsive for all devices. It has two UI designs; one design for desktop to laptop size devices and another for smaller screen devices like tablets and mobile.*
+*This UI design is purely made with ReactJS. It is fully responsive for all devices. It has two UI designs; one design for big screen devices like desktop and laptop and another for smaller screen devices like tablets and mobiles.*
 
  ## *Tech-Stack Used:*
  * ReactJS - For Frontend
