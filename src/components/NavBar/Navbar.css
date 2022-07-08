@@ -42,6 +42,7 @@
     text-decoration: none;
     align-items: baseline;
     gap: calc(3*var(--screen));
+    cursor: pointer;
 }
 
 .logo-main-text{
