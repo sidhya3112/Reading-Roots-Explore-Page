@@ -115,6 +115,7 @@ const PageContent = () => {
                 <button className='filter-btn'>Filter</button>
 
                 <select name='option' onChange={handleChange} className='dropdown-field'>
+                   <option value="" disabled selected hidden>Sort</option>
                    {displaySort}
                 </select>
 
