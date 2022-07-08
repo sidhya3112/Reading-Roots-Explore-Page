@@ -6,7 +6,7 @@
  * ReactJS - For Frontend
  
  ## *Link to the Website:*
-https://62c5da452e282f16b7573a4e--nimble-crumble-dd8603.netlify.app/
+https://nimble-crumble-dd8603.netlify.app/
 
 ## *Video:*
 
