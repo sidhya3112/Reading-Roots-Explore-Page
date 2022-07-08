@@ -2,7 +2,7 @@
 
 .page-container{
     background: whitesmoke;
-    padding-top: 60px;
+    padding-top: 200px;
     margin-right: 50px;
     margin-left: 50px;
     padding-bottom: 150px;
@@ -178,7 +178,7 @@
 
 @media screen and (max-width: 2500px){
     .page-container{
-        padding-top: 40px;
+        padding-top: 180px;
         margin-right: 40px;
         margin-left: 40px;
         padding-bottom: 100px;
@@ -246,6 +246,9 @@
 
 
 @media screen and (max-width: 2000px){
+    .page-container{
+        padding-top: 145px;
+    }
 
     .search{
         font-size: 23px;
@@ -318,6 +321,9 @@
 
 
 @media screen and (max-width: 1800px){
+    .page-container{
+        padding-top: 130px;
+    }
 
     .search{
         font-size: 20px;
@@ -370,6 +376,10 @@
 
 
 @media screen and (max-width: 1650px){
+    .page-container{
+        padding-top: 120px;
+    }
+
     .search-img {
         width: 16px;
         padding-left: 18px;
@@ -420,6 +430,10 @@
 
 
 @media screen and (max-width: 1500px){
+    .page-container{
+        padding-top: 105px;
+    }
+
     .search-genre-bar{
         gap: 24px;
     }
@@ -495,6 +509,10 @@
 
 
 @media screen and (max-width: 1440px){
+    .page-container{
+        padding-top: 105px;
+    }
+
     .search-img {
         width: 12px;
         padding-left: 13px;
@@ -549,6 +567,7 @@
 @media screen and (max-width: 1024px){
     .page-container{
         padding-bottom: 40px;
+        padding-top: 80px;
     }
 
     .filter-btn:hover{
@@ -560,7 +579,7 @@
 
 @media screen and (max-width: 850px){
     .page-container {
-        padding-top: 26px;
+        padding-top: 65px;
     }
     
     .search-genre-bar {
@@ -643,6 +662,9 @@
 
 
 @media screen and (max-width: 380px){
+    .page-container {
+        padding-top: 60px;
+    }
     
     .search-genre-bar {
         gap: 14px;
@@ -726,6 +748,9 @@
 
 
 @media screen and (max-width: 335px){
+    .page-container {
+        padding-top: 55px;
+    }
     
     .search-genre-bar {
         gap: 12px;
