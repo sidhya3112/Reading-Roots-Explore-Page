@@ -21,13 +21,13 @@
 
 /* Carousel Media Queries */
 
-/* Carousel on the screen (only cards)  */
+/* Carousel on the screen - only cards(all) - width of entire carousel excluding arrows chamges */
 .eMZefZ {
     width: 2000px;
     padding: 40px 20px;
 }  
 
-/* Carousel on screen - (both arrows and cards included)*/
+/* Carousel on screen - (both arrows and cards included) - width of entire carousel*/
 .bqyzQp {
     display: flex;
     align-items: center;
@@ -61,6 +61,11 @@
     border: 3.5px solid black;
     padding: 11px;
     width: 40px;
+    cursor: pointer;
+}
+
+.carousel-arrow:hover{
+    background: rgba(211, 211, 211, 0.705);
 }
 
 .dot{
@@ -217,6 +222,63 @@
 
     .carousel-arrow {
         width: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px){
+
+    .eMZefZ {
+        width: 620px;
+        padding: 15px 12px 20px 12px;
+    }  
+
+    .carousel-arrow {
+        border: 1px solid black;
+    }
+
+    .dot{
+        height: 6px;
+        width: 6px;
+    }
+}
+
+
+@media screen and (max-width: 850px){
+    .no-of-books{
+        font-size: 12px;
+    }
+
+    .big-screen-carousel {
+        display: none;
+    }
+
+    .books-section {
+        margin-top: 30px;
+    }
+
+    .bqyzQp {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 380px){
+    .no-of-books{
+        font-size: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 335px){
+    .no-of-books{
+        justify-content: center;
+        font-size: 10px;
     }
 }
 

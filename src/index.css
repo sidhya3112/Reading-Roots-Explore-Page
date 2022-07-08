@@ -21,6 +21,10 @@ code {
   .navbar-small-screen{
     display: none;
  }
+
+ .small-screen-carousel{
+  display: none;
+ }
 }
 
 @media screen and (max-width:4000px) {
@@ -29,7 +33,12 @@ code {
   }
   .navbar-small-screen{
     display: none;
-}
+ }
+
+ .small-screen-carousel{
+  display: none;
+ }
+
 }
 
 

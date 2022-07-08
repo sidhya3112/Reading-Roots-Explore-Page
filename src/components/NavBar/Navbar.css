@@ -82,11 +82,17 @@
     color: #413e66;
     font-size: calc(15*var(--screen));
     font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar-components:hover{
+    text-decoration: underline;
 }
 
 .navbar-icons{
     width: calc(30*var(--screen));
     height: calc(30*var(--screen));
+    cursor: pointer;
 }
 
 .icons{
@@ -102,6 +108,11 @@
     align-items: flex-end;
     gap: calc(9*var(--screen));
     font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar-profile-icon:hover{
+    text-decoration: underline;
 }
 
 .down-arrow{

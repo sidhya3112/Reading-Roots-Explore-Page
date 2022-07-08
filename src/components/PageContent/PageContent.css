@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
 }
 
 
@@ -66,9 +65,25 @@
     font-size: 31px;
 }
 
+
 .dropdown-field{
-    width: 260px;
+    width: 267px;
+    height: 72px;
     font-size: 29px;
+    border-radius: 11px;
+    border: 1.8px solid lightgrey;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='54' viewBox='0 0 24 24' width='44' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 94%;
+    background-position-y: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+    padding: 14px 50px 14px 14px;
+    font-family: unset;
+    color: grey;
+    cursor: pointer;
 }
 
 
@@ -127,20 +142,21 @@
 .checkbox{
     margin: 0px;
     cursor: pointer;
-    height: 32px;
-    width: 32px;
+    height: 34px;
+    width: 34px;
 }
 
 .filter-btn{
     margin: 0px;
     padding: 0px;
-    height: 57px;
-    width: 113px;
-    font-size: 29px;
+    height: 72px;
+    width: 124px;
+    font-size: 31px;
     color: white;
     background-color: #6f8f3a;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .filter-btn:hover{
@@ -192,13 +208,15 @@
     
     .dropdown-field{
         font-size: 25px;
-        width: 218px;
+        width: 239px;
+        height: 62px;
+        padding: 12px 50px 12px 14px;
     }
 
     .filter-btn{
-        font-size: 25px;
-        height: 50px;
-        width: 105px;
+        font-size: 27px;
+        height: 59px;
+        width: 115px;
     }
 
     .available-only{
@@ -206,8 +224,8 @@
     }
 
     .checkbox{
-        width: 27px;
-        height: 27px;
+        width: 29px;
+        height: 29px;
     }
 
     .filter-list{
@@ -250,13 +268,18 @@
     
     .dropdown-field{
         font-size: 21px;
-        width: 200px;
+        width: 191px;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='44' viewBox='0 0 24 24' width='34' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-position-x: 94%;
+        background-position-y: 2px;
+        height: 50px;
+        padding: 9px 41px 9px 12px;
     }
 
     .filter-btn{
-        font-size: 21px;
-        height: 43px;
-        width: 89px;
+        font-size: 23px;
+        height: 48px;
+        width: 100px;
     }
 
     .available-only{
@@ -264,8 +287,8 @@
     }
 
     .checkbox{
-        width: 24px;
-        height: 24px;
+        width: 26px;
+        height: 26px;
     }
 
     .filter-list{
@@ -316,9 +339,9 @@
     }
 
     .filter-btn{
-        font-size: 18px;
-        height: 37px;
-        width: 76px;
+        font-size: 20px;
+        height: 47px;
+        width: 94px;
     }
 
     .available-only{
@@ -326,8 +349,8 @@
     }
 
     .checkbox{
-        width: 21px;
-        height: 21px;
+        width: 23px;
+        height: 23px;
     }
 
     .filter-list {
@@ -355,13 +378,6 @@
         width: 190px;
     }
 
-    .user-related-section{
-        font-size: 14px;
-        height: 20px;
-        width: 194px;
-        margin-top: 20px;
-    }
-
     .dropdown-menu{
         font-size: 18px;
         gap: 5px;
@@ -369,13 +385,13 @@
     
     .dropdown-field{
         font-size: 16px;
-        width: 160px;
+        width: 166px;
     }
 
     .filter-btn{
-        font-size: 16px;
-        height: 35px;
-        width: 69px;
+        font-size: 18px;
+        height: 48px;
+        width: 89px;
         border-radius: 7px;
     }
 
@@ -384,8 +400,8 @@
     }
 
     .checkbox{
-        width: 19px;
-        height: 19px;
+        width: 21px;
+        height: 21px;
     }
 
     .filter-list {
@@ -417,9 +433,9 @@
     }
 
     .user-related-section{
-        font-size: 12px;
-        height: 14px;
-        width: 165px;
+        font-size: 14px;
+        height: 18px;
+        width: 183px;
         margin-top: 15px;
         font-weight: bold;
         border-radius: 5px;
@@ -431,14 +447,17 @@
     }
     
     .dropdown-field{
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
         font-size: 14px;
         width: 146px;
+        height: 40px;
+        padding: 5px 30px 5px 10px;
     }
 
     .filter-btn{
-        font-size: 14px;
-        height: 31px;
-        width: 59px;
+        font-size: 16px;
+        height: 38px;
+        width: 74px;
         border-radius: 5px;
     }
 
@@ -447,8 +466,8 @@
     }
 
     .checkbox{
-        width: 15px;
-        height: 15px;
+        width: 17px;
+        height: 17px;
     }
 
     .filter-list {
@@ -485,9 +504,9 @@
     }
 
     .user-related-section{
-        font-size: 10px;
+        font-size: 12px;
         height: 10px;
-        width: 136px;
+        width: 164px;
         margin-top: 15px;
         font-weight: bold;
         border-radius: 3px;
@@ -498,14 +517,17 @@
     }
     
     .dropdown-field{
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='30' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
         font-size: 12px;
-        width: 140px;
+        width: 126px;
+        height: 35px;
+        padding: 5px 30px 5px 10px;
     }
 
     .filter-btn{
-        font-size: 12px;
-        height: 27px;
-        width: 51px;
+        font-size: 14px;
+        height: 34px;
+        width: 66px;
     }
 
     .available-only{
@@ -514,6 +536,250 @@
 
 }
 
+
+
+@media screen and (max-width: 1024px){
+    .page-container{
+        padding-bottom: 40px;
+    }
+
+    .filter-btn:hover{
+        border: 1.5px solid #6f8f3a;
+    }
+}
+
+
+
+@media screen and (max-width: 850px){
+    .page-container {
+        padding-top: 26px;
+    }
+    
+    .search-genre-bar {
+        gap: 14px;
+    }
+
+    .search-img {
+        width: 10px;
+        padding-left: 11px;
+    }
+
+    .search{
+        font-size: 12px;
+        gap: 2px;
+    }
+
+    .search-input-field {
+        font-size: 10px;
+        padding: 3px 18px 3px 25px;
+        width: 118px;
+        height: 20px;
+    }
+
+    .user-related-section{
+        font-size: 10px;
+        height: 5px;
+        width: 150px;
+    }
+
+    .dropdown-menu{
+        font-size: 12px;
+        gap: 2px;
+    }
+    
+    .dropdown-field{
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='26' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        font-size: 12px;
+        width: 119px;
+        height: 29px;
+        padding: 3px 21px 3px 8px;
+        background-position-x: 94%;
+        background-position-y: 0.5px;
+    }
+
+    .filter-btn{
+        font-size: 12px;
+        height: 28px;
+        width: 54px;
+    }
+
+    .available-only{
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .checkbox {
+        width: 15px;
+        height: 15px;
+    }
+
+    .small-screen-filterlist-1 {
+        gap: 14px;
+        margin-top: 6px;
+    }
+
+    .small-screen-filterlist-2 {
+        gap: 14px;
+        margin-top: 6px;
+    }
+
+    .filter-list{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        align-items: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 380px){
+    
+    .search-genre-bar {
+        gap: 14px;
+    }
+
+    .search-img {
+        width: 8px;
+        padding-left: 10px;
+    }
+
+    .search{
+        font-size: 10px;
+    }
+
+    .search-input-field {
+        font-size: 9px;
+        padding: 3px 10px 3px 22px;
+        width: 99px;
+        height: 15px;
+    }
+
+    .user-related-section{
+        font-size: 9px;
+        height: 5px;
+        width: 119px;
+        margin-top: 12px;
+    }
+
+    .dropdown-menu{
+        font-size: 10px;
+    }
+    
+    .dropdown-field{
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='14' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        font-size: 9px;
+        width: 94px;
+        height: 24px;
+        padding: 3px 21px 3px 8px;
+        background-position-y: -0.5px;
+    }
+
+    .filter-btn{
+        font-size: 10px;
+        height: 23px;
+        width: 47px;
+    }
+
+    .filter-btn:hover{
+        border: 1px solid #6f8f3a;
+    }
+
+    .available-only{
+        font-size: 10px;
+        gap: 6px;
+    }
+
+    .checkbox {
+        width: 13px;
+        height: 13px;
+    }
+
+    .small-screen-filterlist-1 {
+        gap: 14px;
+        margin-top: 2px;
+    }
+
+    .small-screen-filterlist-2 {
+        gap: 14px;
+        margin-top: 2px;
+    }
+
+    .filter-list{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 335px){
+    
+    .search-genre-bar {
+        gap: 12px;
+    }
+
+    .search{
+        font-size: 9px;
+    }
+
+    .search-input-field {
+        font-size: 8px;
+        padding: 3px 8px 3px 22px;
+        width: 87px;
+        height: 14px;
+    }
+
+    .user-related-section{
+        font-size: 8px;
+        height: 4px;
+        width: 110px;
+        margin-top: 9px;
+    }
+
+    .dropdown-menu{
+        font-size: 9px;
+    }
+    
+    .dropdown-field{
+       font-size: 8px;
+       width: 83px;
+       height: 24px;
+       padding: 3px 17px 3px 6px;
+    }
+
+
+    .available-only{
+        font-size: 9px;
+        gap: 5px;
+    }
+
+    .checkbox {
+        width: 13px;
+        height: 13px;
+    }
+
+    .small-screen-filterlist-1 {
+        gap: 12px;
+        margin-top: 0px;
+    }
+
+    .small-screen-filterlist-2 {
+        gap: 12px;
+        margin-top: 0px;
+    }
+
+    .filter-list{
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+}
 
 
 

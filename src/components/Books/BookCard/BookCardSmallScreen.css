@@ -1,0 +1,163 @@
+/* Media Queries w.r.t 850px */
+/* For mobile screen */
+@media screen and (max-width:850px) {
+    .book-card-sm{
+        height: 160px;
+    }
+    .division-sm{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .card-img-sm{
+        width: 50%;
+        height: 160px;
+        box-shadow: 4px 4px 4px darkgrey;
+    }
+
+    .card-body-sm{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 5px;
+    }
+
+    .title-author-owner-sm{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid darkgrey;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .title-author-sm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 700;
+        font-size: 13px;
+        font-family: cursive;
+        text-align: center;
+    }
+
+    .by-author-sm{
+        display: flex;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    .author-sm{
+        margin: 0px;
+        padding: 0px;
+        font-weight: 700;
+    }
+
+    .owner-sm{
+        font-size: 12px;
+    }
+
+    .btn-sm{
+        padding: 0px;
+        margin: 0px;
+        background: transparent;
+        border: none;
+        color: white;
+        border-radius: 3px;
+        height: 30px;
+        font-size: 12.5px;
+    }
+
+    .request-btn-sm{
+        background: #6f8f3a;
+    }
+
+    .view-btn-sm{
+        background: #a2671a;
+    }
+
+    .book-card-sm:hover{
+        transform: scale(1.05);
+    }
+
+    .request-btn-sm:hover{
+        color: #6f8f3a;
+        background: transparent;
+        border: 1px solid #6f8f3a;
+    }
+
+    .view-btn-sm:hover{
+        color: #a2671a;
+        background: transparent;
+        border: 1px solid #a2671a;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:380px) {
+    .division-sm{
+        gap: 15px;
+    }
+
+    .card-img-sm{
+        box-shadow: 2px 3px 5px darkgrey;
+    }
+
+    .title-author-sm{
+        font-size: 11px;
+    }
+
+    .by-author-sm{
+        font-size: 10px;
+    }
+
+    .owner-sm{
+        font-size: 10px;
+    }
+
+    .btn-sm{
+        font-size: 10.5px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:335px) {
+
+    .book-card-sm{
+        height: 150px;
+    }
+
+    .division-sm{
+        gap: 12px;
+    }
+
+    .card-img-sm{
+        height: 150px;
+    }
+
+    .title-author-sm{
+        font-size: 10px;
+    }
+
+    .by-author-sm{
+        font-size: 9px;
+    }
+
+    .owner-sm{
+        font-size: 9px;
+    }
+
+    .btn-sm{
+        height: 25px;
+        font-size: 9.5px;
+    }
+}
+

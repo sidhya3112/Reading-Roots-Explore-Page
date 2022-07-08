@@ -1,0 +1,70 @@
+/* Media Queries w.r.t 850px */
+/* For mobile screen */
+@media screen and (max-width: 850px) {
+    .small-screen-carousel{
+        display: block;
+    }
+
+    /* Carousel on screen - only cards(all) */
+    .jehekx {
+        width: 280px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .carousel-arrow {
+        border: 1px solid black;
+        position: absolute;
+        bottom: -25px;
+        border-radius: 100px;
+        padding: 7px;
+        width: 10px;
+    }
+
+    .carousel-right-arrow{
+        right: 5px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 380px) {
+
+    /* Carousel on screen - only cards(all) */
+    .jehekx {
+        width: 250px;
+    }
+
+    .carousel-arrow {
+        padding: 5px;
+        bottom: -15px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 335px) {
+
+    /* Carousel on screen - only cards(all) */
+    .jehekx {
+        width: 215px;
+    }
+
+    .carousel-arrow {
+        padding: 5px;
+        bottom: -15px;
+    }
+
+    .carousel-right-arrow{
+        right: 17px;
+    }
+
+    .carousel-left-arrow{
+        left: 22px;
+    }
+
+}

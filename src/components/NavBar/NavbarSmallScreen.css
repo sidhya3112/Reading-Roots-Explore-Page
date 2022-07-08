@@ -38,11 +38,13 @@
 .menu-img{
     width: calc(25*var(--smscreen));
     height: calc(25*var(--smscreen));
+    cursor: pointer;
 }
 
 .menu-close-img{
     width: calc(20*var(--smscreen));
-    height: calc(20*var(--smscreen));   
+    height: calc(20*var(--smscreen));
+    cursor: pointer;   
 }
 
 .menuNav {

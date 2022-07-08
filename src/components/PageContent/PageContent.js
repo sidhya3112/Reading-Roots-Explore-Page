@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './PageContent.css';
 import Select from 'react-select';
 import search from '../../images/search.png'
@@ -7,7 +7,7 @@ import Books from '../Books/Books';
 const PageContent = () => {
 
 
-    const genre = [
+    const genres = [
         { label: 'All', value: 'All' },
         { label: 'Fiction', value: 'Fiction' },
         { label: 'Non-Fiction', value: 'Non-Fiction' },
@@ -17,7 +17,11 @@ const PageContent = () => {
         { label: 'Biography', value: 'Biography' },        
     ]
 
-    const year = [
+    const displayGenre = genres.map((genre)=>{
+        return <option className='dropdown-option' value={genre.value}>{genre.label}</option>;
+      });
+
+    const years = [
         { label: 'All', value: 'All' },
         { label: '2022', value: '2022' },
         { label: '2021', value: '2021' },
@@ -25,17 +29,35 @@ const PageContent = () => {
         { label: '2019', value: '2019' }       
     ]
 
-    const branch = [
+    const displayYear = years.map((year)=>{
+        return <option className='dropdown-option' value={year.value}>{year.label}</option>;
+      });
+
+    const branches = [
         { label: 'All', value: 'All' }     
     ]
 
-    const sort = [
+    const displayBranch = branches.map((branch)=>{
+        return <option className='dropdown-option' value={branch.value}>{branch.label}</option>;
+      });
+
+    const sortList = [
         { label: 'All', value: 'All' },
         { label: 'Popularity', value: 'Popularity' },
         { label: 'Date Published', value: 'Date Published' },
         { label: 'Author', value: 'Author' },
         { label: 'Most Liked', value: 'Most Liked' },
     ]
+
+    const displaySort = sortList.map((sort)=>{
+        return <option className='dropdown-option' value={sort.value}>{sort.label}</option>;
+      });
+
+    const [option,setOption] = useState()
+
+    function handleChange(event){
+        setOption(event.target.value)
+    }
 
 
   return (
@@ -51,11 +73,11 @@ const PageContent = () => {
 
             <div className='dropdown-menu genre'>
                 Book Genre
-                <Select
-                className='dropdown-field genre-field'
-                options={genre}
-                defaultValue={{ label: 'All', value: 'All' }}
-                />
+
+                <select name='option' onChange={handleChange} className='dropdown-field'>
+                   {displayGenre}
+                </select>
+
             </div>
         </ul>
 
@@ -67,20 +89,20 @@ const PageContent = () => {
             <ul className="small-screen-filterlist-1">
                <div className='dropdown-menu year'>
                 Year
-                   <Select
-                    className='dropdown-field year-field'
-                    options={year}
-                    defaultValue={{ label: 'All', value: 'All' }}
-                    />
+
+                <select name='option' onChange={handleChange} className='dropdown-field'>
+                   {displayYear}
+                </select>
+
                 </div>
 
                 <div className='dropdown-menu branch'>
                 Branch
-                   <Select
-                    className='dropdown-field branch-field'
-                    options={branch}
-                    defaultValue={{ label: 'All', value: 'All' }}
-                    />
+
+                <select name='option' onChange={handleChange} className='dropdown-field'>
+                   {displayBranch}
+                </select>
+
                 </div>
             </ul>
 
@@ -92,11 +114,10 @@ const PageContent = () => {
 
                 <button className='filter-btn'>Filter</button>
 
-                <Select
-                className='dropdown-field sort-field'
-                options={sort}
-                placeholder='Sort'
-                />
+                <select name='option' onChange={handleChange} className='dropdown-field'>
+                   {displaySort}
+                </select>
+
             </ul>
         </ul>
 
