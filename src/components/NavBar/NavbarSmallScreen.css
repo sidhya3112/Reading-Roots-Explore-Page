@@ -77,11 +77,6 @@
     color: #a2671a;
   }
 
-  .components-inside-menu:hover{
-    border-bottom: 1px solid black;
-    color: black;
-  }
-
 
   @media screen and (max-width:350px){
     .navbar-container{
