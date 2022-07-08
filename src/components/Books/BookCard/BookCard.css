@@ -256,67 +256,7 @@
         font-size: 12px;
     }
 
-    .request-book-btn {
-        width: 64px;
-        height: 20px;
-        font-size: 8px;
-        border: 1px solid #a2671a;
-        border-radius: 3px;
-    }
-
-    .right-arrow{
-        width: 6px;
-        padding: 4px;
-    }
 }
-
-
-
-@media screen and (max-width: 1024px){
-    .book-card{
-        box-shadow: 3px 2px 8px darkgrey;
-    }
-    
-    .card-img{
-        height: 175px;
-    }
-
-    .title{
-        font-size: 12px;
-    }
-
-    .card-body{
-        font-size: 10px;
-        gap: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .request-book {
-        padding: 10px;
-    }
-
-    .request-book-btn {
-        width: 48px;
-        height: 17px;
-        font-size: 6px;
-        border: 1px solid #a2671a;
-        border-radius: 3px;
-    }
-
-    .right-arrow{
-        width: 5px;
-        padding: 3px;
-    }
-}
-
-
-
-
-
-
-
-
 
 
 

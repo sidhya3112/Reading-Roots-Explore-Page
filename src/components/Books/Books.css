@@ -222,29 +222,6 @@
 
 
 
-@media screen and (max-width: 1024px){
-    .no-of-books{
-        font-size: 12px;
-    }
-
-    .eMZefZ {
-        width: 530px;
-        padding: 15px 10px;
-    }  
-
-    .dot{
-        height: 6px;
-        width: 6px;
-    }
-
-    .carousel-arrow {
-        width: 8px;
-        border: 1px solid black;
-        padding: 7px;
-    }
-}
-
-
 
 
 
